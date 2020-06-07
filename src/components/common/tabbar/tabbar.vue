@@ -13,7 +13,7 @@
         <div slot="icon-img" class="iconfont icon-gouwuche"></div>
         <div slot="icon-text" >购物车</div>
       </tabbarItem>
-      <tabbarItem path='/profile' color="skyblue">
+      <tabbarItem path='/mine' color="skyblue">
         <div slot="icon-img" class="iconfont icon-wode"></div>
         <div slot="icon-text" >我的</div>
       </tabbarItem>

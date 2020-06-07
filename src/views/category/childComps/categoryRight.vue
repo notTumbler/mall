@@ -1,12 +1,12 @@
 <template>
-  <div class="">
-    我的
+  <div class="cateright">
+    
   </div>
 </template>
 
 <script>
 export default {
-  name:"",
+  name:"cateright",
   components: {
 
   },

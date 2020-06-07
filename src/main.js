@@ -2,8 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import toast from 'components/common/toast'
 
-
+Vue.use(toast)
 // 解决重复点击导航路由报错
 import Router from 'vue-router'
 const originalPush = Router.prototype.push;

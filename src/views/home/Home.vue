@@ -71,7 +71,7 @@ export default {
         sell: { page: 0, list: [] }
       },
       currentType: "pop",
-      // showBackTop: false,
+      // showBackTop: false,在minxins里
       tabOffSetTop:0,
       isFixed:false,
       // 保存离开时的Y值
@@ -148,6 +148,7 @@ export default {
     scrollPosition(position) {
       // 1.判断backTop是否显示
       this.showBackTop = -position.y > 1000;
+      
       // 2.决定tabControl吸顶效果
       this.isFixed = (-position.y > 609);
     },
@@ -155,6 +156,7 @@ export default {
     loadMore() {
       this.getHomeGoods(this.currentType);
       // this.$refs.chen.FinshPullUp();
+      
     },
     // 监听轮播图图片加载完毕
     swipperimageLoad(){
@@ -167,7 +169,7 @@ export default {
   // home页面在其它页面间来回切换时保存下scroll.position.y
   //通过进入activated时获取Y值,离开deactivated时保存Y值来达到类keepalive的效果
   activated() {
-    // 先后顺序很重要啊 必须先刷新再定位，跟着老师打 又被坑了 难受
+    // 先后顺序很重要啊 必须先刷新再定位，老师的可以，我的不行 难受
     this.$refs.chen.ScrollRefresh();
     this.$refs.chen.ScrollTozero(0,this.saveY,0);
   },

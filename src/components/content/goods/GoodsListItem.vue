@@ -1,7 +1,8 @@
 <template>
   <div class="goods-item" @click="toDetailPage">
     <img :src="goodsItem.show.img" v-if="goodsItem.show" @load="imgLoadFinish" alt="图片失联了~" />
-    <img :src="this.goodsItem.image" v-else @load="imgLoadFinish" alt="图片失联了~" />
+    <img :src="this.goodsItem.image" v-else-if="goodsItem.image" @load="imgLoadFinish" alt="图片失联了~" />
+    <img :src="this.goodsItem.img" v-else @load="imgLoadFinish" alt="图片失联了~" />
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
       <span class="price">{{goodsItem.price}}</span>

@@ -1,6 +1,8 @@
 <template>
   <div class="cartlist">
       <Scroll class="content" ref="chen">
+        <slot name='other'></slot>
+
         <cart-list-item 
         v-for="(item, index) in cartList" 
         :key="index" 

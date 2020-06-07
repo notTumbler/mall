@@ -14,8 +14,6 @@ export const itemListenerMixin = {
       this.newRefresh();
     };
     this.$bus.$on('imgLoadFinish',this.itemImgListener);
-    console.log('mixin');
-    
   },
 }
 

@@ -6,7 +6,7 @@
     <div class="center">
       <slot name="center"></slot>
     </div>
-    <div class="right">
+    <div class="right" :style="{'color':slotcolor}">
       <slot name="right"></slot>
     </div>
   </div>
@@ -23,6 +23,10 @@ export default {
     fontcolor:{
       type:String,
       default:'white'
+    },
+    slotcolor:{
+      type:String,
+      default:'while'
     }
   },
   components: {

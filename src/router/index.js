@@ -25,9 +25,9 @@ Vue.use(VueRouter)
     component: () => import('views/cart/cart')
   },
   {
-    path: '/profile',
-    name: 'profile',
-    component: () => import('views/profile/profile')
+    path: '/mine',
+    name: 'mine',
+    component: () => import('views/mine/mine')
   },
   {
     path: '/detail/:iid',
