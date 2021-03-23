@@ -79,11 +79,12 @@ export default {
 .cartbottombar {
   position: relative;
   height: 45px;
-  background-color: #fb7200;
+  background-color: white;
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: white;
+  color: purple;
+  border-top: #999 solid 1px;
 }
 .bottombar-left {
   display: flex;
@@ -109,7 +110,7 @@ export default {
   text-align: center;
   line-height: 45px;
 
-  background-color: orangered;
+  background-color: skyblue;
 }
 /* .checkbutton{
     width: 20px;

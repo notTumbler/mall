@@ -1,6 +1,6 @@
 <template>
-  <div class="normal-list">
-    <div v-for="(item, index) in listData" :key="index" class="item">
+  <div class="normal-list" >
+    <div v-for="(item, index) in listData" :key="index" class="item" @click="skip(item)" >
         <span class="icon">
           <img :src="iconURL(item)" alt="">
         </span>
@@ -23,6 +23,11 @@
     methods: {
 			iconURL(item) {
 				return require('assets/img/profile/' + item.icon)
+      },
+      skip(item){
+        // console.log(item);
+        
+        this.$emit('skipTo',item);
       }
     }
 	}

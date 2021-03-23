@@ -5,7 +5,15 @@ export function debounce(fun, delay) {
     if (timer) clearTimeout(timer);
     timer = setTimeout(() => {
       fun.apply(this, args);
+      // console.log(this);
       // console.log(args);
     }, delay);
   };
 }
+
+
+
+
+
+
+

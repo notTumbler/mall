@@ -8,7 +8,7 @@
         <span>暂无绑定手机号</span>
       </div>
     </div>
-    <div class="arrow">
+    <div class="arrow" @click="toLogin">
       <img src="~assets/img/common/arrow-left.svg" alt="">
     </div>
   </div>
@@ -16,7 +16,12 @@
 
 <script>
 	export default {
-		name: "UserInfo"
+    name: "UserInfo",
+    methods: {
+      toLogin(){
+        this.$router.push('/Login')
+      }
+    },
 	}
 </script>
 

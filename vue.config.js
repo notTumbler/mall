@@ -11,5 +11,10 @@ module.exports = {
         'views':'@/views'
       }
     }
+  },
+  devServer:{
+    host:'127.0.0.1',
+    port:8889,
+    disableHostCheck:true,
   }
 }
